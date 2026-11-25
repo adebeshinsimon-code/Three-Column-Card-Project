@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+ display: flex;
+ justify-content: center; 
+ align-items: center; 
+ min-height: 100vh; 
+}
+.sedans{
+    display: flex; 
+     flex-direction: column; 
+     background-color:hsl(31, 77%, 52%);
+    color: white;
+     width: 800px; 
+    padding: 30px;
+    line-height: 1.5;
+    
+    border-top-left-radius: 12px; 
+     border-bottom-left-radius: 12px ; 
+}
+.card{
+  display: flex; 
+  width: 600px; 
+  min-height: 400px; 
+}
+ img{
+    width: 50px;
+    padding-bottom: 15px;
+}
+h3{
+    font-family:'Segoe UI';
+    padding-bottom: 30px;
+    
+}
+ p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: 200;
+    padding-bottom: 40px;
+}
+.sedans button{
+    background-color: white;
+    border: none;
+    padding: 7px;
+    border-radius: 28px;
+    color:hsl(31, 77%, 52%);
+    width: 100px;
+}
+.suvs{
+    display: flex;
+    flex-direction: column;
+    background-color:hsl(184, 100%, 22%);
+    color: white;
+     width: 800px; 
+    padding: 30px;
+    line-height: 1.5;
+    
+}
+.suvs button{
+    background-color: white;
+    border: none;
+    padding: 7px;
+    border-radius: 28px;
+    color:rgb(8, 8, 115);
+    width: 100px;
+    
+    
+}
+.luxury{
+    display: flex;
+    flex-direction: column;
+    background-color:hsl(179, 100%, 13%);
+    color: white;
+     width: 800px; 
+    padding: 30px;
+    line-height: 1.5;
+    border-top-right-radius: 12px;  
+border-bottom-right-radius: 12px; 
+   border: none;   
+}
+.luxury button{
+    background-color: white;
+    border: none;
+    padding: 7px;
+    border-radius: 28px;
+    color:rgb(28, 211, 28);
+     width:100px; 
+      
+}
+.suvs button:hover{
+     background-color:hsl(184, 100%, 22%);
+    border:2px solid white;
+     cursor: pointer;
+    
+}
+.luxury button:hover{
+      background-color:hsl(179, 100%, 13%);
+    border:2px solid white;
+    cursor: pointer;
+    
+    
+}
+.sedans button:hover{
+      background-color: orange;
+    border:2px solid white;
+    cursor: pointer;  
+}
+@media(max-width:375px){
+    
+  .sedans{
+    border-radius: 10px 10px 0 0;
+     
+    
+     width: 200px;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100px);
+  }
+  .suvs{
+      
+     width: 200px;
+     
+
+  }
+  .luxury{
+      border-radius: 0 0 10px 10px;
+     width: 200px;
+    
+
+  }
+  
+  
+  }
+
+
+
+
